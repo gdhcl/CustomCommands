@@ -50,7 +50,6 @@ namespace ParTech.Commands.Browse
                 {
                     site = Factory.GetSite(siteInfo.Name);
                     defaultDevice = Context.ContentDatabase.Resources.Devices[siteInfo.DefaultDevice];
-                    site = Factory.GetSite(siteInfo.Name);
                 }
 
                 Assert.IsNotNull(site, "Site \"{0}\" not found", Settings.Preview.DefaultSite);
